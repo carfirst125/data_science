@@ -1,0 +1,95 @@
+# AI BANNER BRIEF
+
+## 1. OBJECTIVE
+- Campaign:
+- Product:
+- Target audience:
+- Marketing objective:
+- Desired customer action:
+
+## 2. FORMAT
+- Size:
+- Aspect ratio:
+- Orientation:
+- Channel:
+- Output variations:
+
+## 3. BRAND
+- Brand:
+- Logo:
+- Primary colors:
+- Secondary colors:
+- Brand style:
+- Brand guidelines / reference:
+
+## 4. CORE MESSAGE
+- Main headline:
+- Supporting message:
+- Key offer:
+- Primary CTA:
+- Secondary CTA:
+- Disclaimer:
+- Exact text that MUST appear:
+
+## 5. SUBJECT
+- Main subject:
+- Age / demographic:
+- Appearance:
+- Clothing:
+- Expression:
+- Pose / action:
+- Position:
+- Real person / illustration:
+- Reference image:
+
+## 6. PRODUCT
+- Product:
+- Product appearance:
+- Product position:
+- Product reference image:
+- Mandatory product details:
+
+## 7. COMPOSITION
+- Layout:
+- Text area:
+- Visual area:
+- Subject position:
+- Product position:
+- Logo position:
+- CTA position:
+- Negative space:
+- Visual hierarchy:
+
+## 8. VISUAL DIRECTION
+- Environment / background:
+- Lighting:
+- Color mood:
+- Photography / illustration style:
+- Mood:
+- Visual effects:
+- Premium / youthful / energetic / etc.:
+- References:
+
+## 9. CREATIVE FREEDOM
+- MUST preserve:
+- MAY creatively interpret:
+- MUST NOT:
+- Things to avoid:
+
+## 10. ASSETS
+- Logo:
+- Product image:
+- Subject image:
+- Brand guideline:
+- Other reference images:
+
+## 11. GENERATION INSTRUCTION
+Create a polished commercial advertising banner based on the brief above.
+Prioritize:
+1. Brand consistency
+2. Clear visual hierarchy
+3. Accurate product representation
+4. Readable and accurate text
+5. Strong CTA
+6. Premium commercial-quality visual
+7. Natural and realistic composition
