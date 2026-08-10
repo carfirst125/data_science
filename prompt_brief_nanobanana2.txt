@@ -1,0 +1,94 @@
+BANNER_BRIEF:
+
+ OBJECTIVE:
+  campaign: "OCB Mastercard World 2in1"
+  objective: "Communicate premium privileges and unlimited lifestyle experiences"
+  target_audience: "Entrepreneurs, affluent customers, high-income professionals, age 30+"
+
+ FORMAT:
+  size: "1024x768"
+  aspect_ratio: "4:3"
+  orientation: "Landscape"
+
+ BRAND:
+  brand: "OCB"
+  logo: "OCB official logo"
+  primary_color: "OCB green"
+  style: "Premium, sophisticated, trustworthy, modern banking"
+
+ MESSAGE:
+  headline: "Đặc quyền không giới hạn"
+  message: "Hoàn tiền mọi trải nghiệm"
+  primary_cta: "Đăng ký ngay"
+  product_name: "OCB Mastercard World 2in1"
+
+ KEY_PRODUCT_BENEFITS:
+  - "Tổng Hoàn tiền đến 60 triệu/năm"
+  - "Hoàn Ẩm thực 10%"
+  - "Hoàn Du lịch 5%"
+  - "Đặc quyền phòng chờ sân bay"
+  - "Ưu đãi Golf dành riêng cho chủ thẻ World"
+
+ SUBJECT:
+  use_human: "Yes, but secondary"
+  description: "Sophisticated Vietnamese/Asian entrepreneur, age 35-45"
+  appearance: "Elegant, confident, successful"
+  clothing: "Premium business-casual"
+  pose: "Natural lifestyle moment, not looking directly at camera"
+  position: "Background/right side"
+  visual_weight: "25-30%"
+
+ PRODUCT:
+  product: "OCB Mastercard World 2in1"
+  importance: "Hero product"
+  position: "Foreground / lower-right or lower-center"
+  appearance: "Realistic premium credit card"
+  reference: "Use official product card image"
+
+ COMPOSITION:
+  layout: "Premium editorial banking advertisement"
+  text_area: "Left side"
+  visual_area: "Right side"
+  product_area: "Lower center/right"
+  logo_position: "Top-right"
+  cta_position: "Bottom-left or bottom-center"
+  hierarchy: "Headline → Message → Product → CTA"
+
+ VISUAL_DIRECTION:
+  style: "Luxury lifestyle banking"
+  environment: "International airport lounge / premium hotel / executive travel"
+  lighting: "Elegant cinematic lighting"
+  color: "Deep OCB green, emerald, black, subtle gold"
+  mood: "Exclusive, confident, sophisticated, aspirational"
+  photography: "High-end commercial photography"
+  effects: "Subtle light reflections, premium glow, elegant gradients"
+  avoid: "Youthful, playful, cartoon, excessive green decoration"
+
+ CREATIVE_FREEDOM:
+  MUST:
+   - "Preserve exact headline and message"
+   - "Show OCB branding"
+   - "Show the actual Mastercard World 2in1 card"
+   - "Maintain premium financial-services positioning"
+   - "Phải có tên sản phẩm trên hình"
+
+  MAY_INTERPRET:
+   - "Background environment"
+   - "Human pose"
+   - "Lighting"
+   - "Luxury lifestyle details"
+   - "Decorative elements"
+
+  MUST_NOT:
+   - "Overly youthful visual"
+   - "Generic stock-photo feeling"
+   - "Excessive decorative effects"
+   - "Crowded layout"
+   - "Double content, no duplicate in content"
+
+Hình ảnh phải sử dụng trên banner: logo và thẻ thật
+
+Style thiết kế hiện đại, hình ảnh sáng sủa, tươi sáng, không khô cứng. Hình ảnh thiết kế tham khảo style
+
+
+Sửa lại cho tôi hình ảnh sau, bỏ phần nội dung bị double appear như "Hoàn 5%" đang bị dư. Remove double, only appear once for a content. Remove icon for removed content. Bạn phải kiểm tra cẩn thận truớc khi xuất lại hình
