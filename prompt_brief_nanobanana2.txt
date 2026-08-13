@@ -120,3 +120,204 @@ Sửa lại cho tôi hình ảnh sau, bỏ phần nội dung bị double appear 
     "cta_deep_link": "/savings/autosave/setup" 
   } 
 }
+
+{
+  "source": "DCO_Playbook_v3 1.pdf (uploaded), Section 3 - The Three-Bucket Architecture",
+  "bucket_1_theme": {
+    "name": "Theme (Background & Environment)",
+    "description": "Themes are full-bleed background layers with no text. They carry emotional tone and time-of-day or campaign context. There are nine theme categories across 28 individual theme assets.",
+    "categories": [
+      {
+        "category": "National & Cultural Holidays",
+        "assets": [
+          { "asset_tag": "theme_tet", "visual_art_direction": "Warm gold-red bokeh. Blurred peach blossom branches. Lantern silhouettes. Festive but minimal.", "trigger_condition": "month IN [1, 2]" },
+          { "asset_tag": "theme_hung_kings", "visual_art_direction": "Deep heritage greens and golds. Soft-focus traditional architecture or red lacquer motifs.", "trigger_condition": "month = 4, day IN [1..10]" },
+          { "asset_tag": "theme_reunification", "visual_art_direction": "Vivid red-yellow gradient. Abstract flag-inspired geometry. Optimistic.", "trigger_condition": "month = 4, day = 30" },
+          { "asset_tag": "theme_national_day", "visual_art_direction": "Classic red with soft bokeh star. Clean and patriotic.", "trigger_condition": "month = 9, day = 2" },
+          { "asset_tag": "theme_mid_autumn", "visual_art_direction": "Deep navy sky, full moon glow, soft lantern halos. Warm amber accents.", "trigger_condition": "month = 8 lunar (~Sept-Oct)" },
+          { "asset_tag": "theme_womens_day_intl", "visual_art_direction": "Soft florals, mauve-to-blush gradient. Empowering and contemporary.", "trigger_condition": "month = 3, day = 8" },
+          { "asset_tag": "theme_womens_day_vn", "visual_art_direction": "Lotus bloom motif. Pink and jade tones. Elegant feminine energy.", "trigger_condition": "month = 10, day = 20" }
+        ]
+      },
+      {
+        "category": "Seasonal Environments",
+        "assets": [
+          { "asset_tag": "theme_dry_season", "visual_art_direction": "Cerulean blue gradient. Clear sky, tropical sunlight. Travel, openness.", "trigger_condition": "month IN [11,12,1,2,3]" },
+          { "asset_tag": "theme_rainy_season", "visual_art_direction": "Deep emerald greens, soft rain bokeh. Moody, home-focused.", "trigger_condition": "month IN [5,6,7,8,9,10]" },
+          { "asset_tag": "theme_year_end_bonus", "visual_art_direction": "Champagne-gold and white gradient. Abstract confetti. Reward feeling.", "trigger_condition": "month IN [11, 12]" },
+          { "asset_tag": "theme_back_to_school", "visual_art_direction": "Crisp whites with soft yellows. Blurred library shelf. Energetic.", "trigger_condition": "month IN [8, 9]" }
+        ]
+      },
+      {
+        "category": "Life Event Campaigns",
+        "assets": [
+          { "asset_tag": "theme_home_dream", "visual_art_direction": "Warm soft-focus interior. Morning light through windows. Aspirational.", "trigger_condition": "nba = home_loan OR life_event = property_search" },
+          { "asset_tag": "theme_wedding_season", "visual_art_direction": "Romantic blush and ivory. Bokeh fairy lights. Flowing fabric.", "trigger_condition": "life_event = engaged OR marital_status recently changed" },
+          { "asset_tag": "theme_new_arrival", "visual_art_direction": "Soft pastels - mint and cream. Abstract nursery elements. Tender.", "trigger_condition": "life_event = newborn OR youngest_child_age < 1" },
+          { "asset_tag": "theme_graduation", "visual_art_direction": "Navy cap-and-gown silhouettes. Gold confetti particles. Achievement.", "trigger_condition": "life_event = graduation OR age IN [21-23] AND month IN [5,6]" },
+          { "asset_tag": "theme_retirement_horizon", "visual_art_direction": "Golden-hour landscape. Warm amber. Leisure and reward.", "trigger_condition": "age >= 55 OR life_event = retirement_planning" }
+        ]
+      },
+      {
+        "category": "Lifestyle & Behavioural Triggers",
+        "assets": [
+          { "asset_tag": "theme_travel_mode", "visual_art_direction": "Airport terminal bokeh. Runway lights. Deep blue-grey tones.", "trigger_condition": "spending_category_top = airlines OR travel_spend_12m > 20M VND" },
+          { "asset_tag": "theme_foodie_culture", "visual_art_direction": "Warm restaurant ambience. Rich ochre and brown palette.", "trigger_condition": "spending_category_top = dining AND dining_freq > 8x/month" },
+          { "asset_tag": "theme_wellness", "visual_art_direction": "Soft sage greens, clean studio whites. Abstract health elements.", "trigger_condition": "spending_category_top = health OR pharmacy_spend > 3M/month" },
+          { "asset_tag": "theme_tech_lifestyle", "visual_art_direction": "Dark mode gradient. Neon edge highlights. Abstract app UI elements.", "trigger_condition": "segment = digital_native OR app_logins_30d > 20" },
+          { "asset_tag": "theme_fashion_retail", "visual_art_direction": "Neutral linen textures. Abstract boutique elements. Muted luxury.", "trigger_condition": "spending_category_top = fashion AND spend_3m > 5M VND" }
+        ]
+      },
+      {
+        "category": "Financial Moments",
+        "assets": [
+          { "asset_tag": "theme_payday_moment", "visual_art_direction": "Celebratory. Confetti, soft gold tones. Short-lived urgency cue.", "trigger_condition": "day IN [1,2,3,25,26,27,28]" },
+          { "asset_tag": "theme_tax_season", "visual_art_direction": "Clean white desk, calculator, document textures. Calm, organised.", "trigger_condition": "month IN [3, 4]" },
+          { "asset_tag": "theme_investment_market", "visual_art_direction": "Abstract rising chart lines in dark navy. Gold data points. Premium.", "trigger_condition": "wealth_segment IN [affluent, high_net_worth]" },
+          { "asset_tag": "theme_rate_promo", "visual_art_direction": "Bold clean graphic. Single large rate percentage in elegant type.", "trigger_condition": "active_promo = rate_campaign" }
+        ]
+      },
+      {
+        "category": "CSR & Social Purpose",
+        "assets": [
+          { "asset_tag": "theme_eco_green", "visual_art_direction": "Lush tropical greens, soft leaf bokeh. Sustainable and grounded.", "trigger_condition": "campaign_tag = green OR product = green_loan" },
+          { "asset_tag": "theme_community_local", "visual_art_direction": "Warm community blur. Local street, amber tones. Human and authentic.", "trigger_condition": "campaign_tag = community" },
+          { "asset_tag": "theme_digital_inclusion", "visual_art_direction": "Clean white with sky blue. Abstract phone outreach motif. Accessible.", "trigger_condition": "segment = new_to_digital OR first_app_login < 90d" }
+        ]
+      },
+      {
+        "category": "Time-of-Day Variants",
+        "assets": [
+          { "asset_tag": "theme_morning_start", "visual_art_direction": "Sunrise palette - peach and gold. Morning coffee steam bokeh.", "trigger_condition": "render_hour IN [6..10]" },
+          { "asset_tag": "theme_midday_active", "visual_art_direction": "Bright neutrals and light blues. Busy urban midday energy.", "trigger_condition": "render_hour IN [11..14]" },
+          { "asset_tag": "theme_evening_wind_down", "visual_art_direction": "Warm amber and deep plum. City lights bokeh. Reflective.", "trigger_condition": "render_hour IN [18..22]" }
+        ]
+      },
+      {
+        "category": "Promotional & Campaign-Specific",
+        "assets": [
+          { "asset_tag": "theme_cashback_event", "visual_art_direction": "Clean white with bursting gold and green coin motif. Reward energy.", "trigger_condition": "active_promo = cashback" },
+          { "asset_tag": "theme_double_points", "visual_art_direction": "Bold graphic with x2 badge. Navy and gold. Urgency and reward.", "trigger_condition": "active_promo = points_multiplier" },
+          { "asset_tag": "theme_app_launch", "visual_art_direction": "Dark tech gradient with glowing phone screen focal point.", "trigger_condition": "campaign_tag = app_feature_launch" },
+          { "asset_tag": "theme_year_anniversary", "visual_art_direction": "Elegant milestone feel. Serif numerals, subtle sparkle, teal and gold.", "trigger_condition": "campaign_tag = bank_anniversary" }
+        ]
+      },
+      {
+        "category": "Evergreen Brand Fallbacks",
+        "assets": [
+          { "asset_tag": "theme_brand_primary", "visual_art_direction": "Clean brand-color gradient. Minimal, polished. No cultural specificity.", "trigger_condition": "DEFAULT - no other rule matched" },
+          { "asset_tag": "theme_premium_dark", "visual_art_direction": "Deep charcoal to black gradient. Ultra-premium. Wealth/investment use.", "trigger_condition": "wealth_segment = high_net_worth AND no campaign active" },
+          { "asset_tag": "theme_clean_white", "visual_art_direction": "Pure white studio gradient. Maximum versatility. Product pops cleanly.", "trigger_condition": "A/B test control arm OR compliance-sensitive segment" }
+        ]
+      }
+    ]
+  },
+  "bucket_2_context": {
+    "name": "Context (Subject / Customer Demographic)",
+    "description": "The Context bucket places a human subject in the frame. Subject assets are transparent-background PNG layers. All subjects should reflect the bank's primary customer geography with authentic, relatable portrayals. There are eleven categories across 25 individual subject assets.",
+    "categories": [
+      {
+        "category": "Gen Z / Student (Age 18-24)",
+        "assets": [
+          { "asset_tag": "subj_genz_f", "customer_intelligence_engine_trigger": "age < 25 AND gender = female", "visual_direction": "Casual streetwear. Phone in hand. High energy, direct gaze. Urban implied.", "behavioural_context": "First credit card, student loan, first savings account." },
+          { "asset_tag": "subj_genz_m", "customer_intelligence_engine_trigger": "age < 25 AND gender = male", "visual_direction": "Hoodie. Earphones. Confident, playful. Tech-native feel.", "behavioural_context": "Heavy app user, digital payments, QR focus." },
+          { "asset_tag": "subj_student_intl", "customer_intelligence_engine_trigger": "age < 25 AND life_event = studying_abroad", "visual_direction": "Smart casual. Campus setting implied. Aspirational, independent.", "behavioural_context": "Education loan, international transfer, travel card." }
+        ]
+      },
+      {
+        "category": "Young Professional (Age 25-34, Single)",
+        "assets": [
+          { "asset_tag": "subj_youngpro_f", "customer_intelligence_engine_trigger": "age 25-34 AND marital = single AND gender = female", "visual_direction": "Smart-casual blazer. Coffee or laptop. Confident CBD energy.", "behavioural_context": "Card upgrade, personal loan, savings goals, first investment." },
+          { "asset_tag": "subj_youngpro_m", "customer_intelligence_engine_trigger": "age 25-34 AND marital = single AND gender = male", "visual_direction": "Collared shirt, sleeves rolled. Urban professional. Decisive.", "behavioural_context": "Auto loan, first mortgage inquiry, investment account." }
+        ]
+      },
+      {
+        "category": "Young Couple (Age 25-40, Married, No Children)",
+        "assets": [
+          { "asset_tag": "subj_couple_young", "customer_intelligence_engine_trigger": "age 25-40 AND marital = married AND has_dependent = false", "visual_direction": "Two subjects, natural and relaxed. Modern apartment or travel. Warm.", "behavioural_context": "Joint accounts, home loan, travel card, wedding savings." },
+          { "asset_tag": "subj_couple_engaged", "customer_intelligence_engine_trigger": "life_event = engaged", "visual_direction": "Pre-wedding glow. Soft romantic energy. Well-dressed but not formal.", "behavioural_context": "Wedding loan, honeymoon savings, joint account opening." }
+        ]
+      },
+      {
+        "category": "Young Family / Parents (Children Under 7)",
+        "assets": [
+          { "asset_tag": "subj_family_young", "customer_intelligence_engine_trigger": "has_dependent = true AND youngest_child_age < 7", "visual_direction": "Two parents with young child. Joyful, warm domestic energy.", "behavioural_context": "Education savings, life insurance, home equity, family loan." },
+          { "asset_tag": "subj_parent_toddler", "customer_intelligence_engine_trigger": "has_dependent = true AND youngest_child_age < 3", "visual_direction": "Single parent with toddler. Tender, protective. Close crop.", "behavioural_context": "Child savings, education policy, protection product." },
+          { "asset_tag": "subj_new_parent", "customer_intelligence_engine_trigger": "life_event = newborn", "visual_direction": "New parent with infant. Tired but joyful. Honest and relatable.", "behavioural_context": "Newborn savings, insurance upsell, parental-leave offer." }
+        ]
+      },
+      {
+        "category": "Established Professional (Age 35-54)",
+        "assets": [
+          { "asset_tag": "subj_pro_established_f", "customer_intelligence_engine_trigger": "age 35-54 AND income IN [high, premium] AND gender = female", "visual_direction": "Tailored blazer. Polished and authoritative. Boardroom implied.", "behavioural_context": "Wealth management, premium card, mortgage top-up." },
+          { "asset_tag": "subj_pro_established_m", "customer_intelligence_engine_trigger": "age 35-54 AND income IN [high, premium] AND gender = male", "visual_direction": "Business formal. Watch visible. Confident. Corner-office energy.", "behavioural_context": "Investment portfolio, premium banking, biz account expansion." },
+          { "asset_tag": "subj_middle_income_f", "customer_intelligence_engine_trigger": "age 35-54 AND income = emerging_affluent AND gender = female", "visual_direction": "Smart casual. Warm and capable. Home-office environment.", "behavioural_context": "Personal loan, education savings, insurance upgrade." }
+        ]
+      },
+      {
+        "category": "Pre-Retiree & Senior (Age 55+)",
+        "assets": [
+          { "asset_tag": "subj_senior_couple", "customer_intelligence_engine_trigger": "age >= 55 AND marital = married", "visual_direction": "Relaxed, dignified couple. Garden or leisure. Silver-hair positive.", "behavioural_context": "Term deposit, fixed income, retirement drawdown, wealth transfer." },
+          { "asset_tag": "subj_senior_active", "customer_intelligence_engine_trigger": "age >= 60 AND lifestyle = active", "visual_direction": "Single senior, outdoors. Energetic and independent.", "behavioural_context": "Health insurance, travel insurance, pension, digital adoption." },
+          { "asset_tag": "subj_preretiree", "customer_intelligence_engine_trigger": "age 50-59 AND life_event = retirement_planning", "visual_direction": "Mid-50s professional. Thoughtful. Transitional life-stage energy.", "behavioural_context": "Retirement savings, investment advice, mortgage clearance." }
+        ]
+      },
+      {
+        "category": "Entrepreneur & Business Owner",
+        "assets": [
+          { "asset_tag": "subj_entrepreneur_f", "customer_intelligence_engine_trigger": "account_type = business AND gender = female", "visual_direction": "Founder energy. Co-working or own-brand retail. Purposeful.", "behavioural_context": "SME banking, business loan, POS solution, payroll." },
+          { "asset_tag": "subj_entrepreneur_m", "customer_intelligence_engine_trigger": "account_type = business AND gender = male", "visual_direction": "Casual-smart. Laptop or product display. Confident and busy.", "behavioural_context": "Business overdraft, expansion loan, business card." }
+        ]
+      },
+      {
+        "category": "Behavioural Archetypes",
+        "assets": [
+          { "asset_tag": "subj_traveler", "customer_intelligence_engine_trigger": "spending_top = airlines OR travel_spend_12m > 20M VND", "visual_direction": "Airport lounge, suitcase, passport. Aspirational mobility.", "behavioural_context": "Travel card, lounge access, travel insurance, forex." },
+          { "asset_tag": "subj_homebody_saver", "customer_intelligence_engine_trigger": "savings_rate > 30% AND digital_logins_30d < 5", "visual_direction": "Cosy home. Reading or cooking backdrop. Warm, intentional.", "behavioural_context": "Term deposit, auto-save, mortgage prepayment offer." },
+          { "asset_tag": "subj_gig_worker", "customer_intelligence_engine_trigger": "income_pattern = irregular AND employment = freelance", "visual_direction": "Creative studio or motorbike implied. Independent, resourceful.", "behavioural_context": "Flexible loan, gig-worker account, invoice financing." }
+        ]
+      },
+      {
+        "category": "Digital Adoption Segments",
+        "assets": [
+          { "asset_tag": "subj_new_to_digital", "customer_intelligence_engine_trigger": "segment = new_to_digital OR first_app_login < 90d", "visual_direction": "Slightly hesitant but curious. Holding phone with guidance gesture. Warm.", "behavioural_context": "Digital onboarding, e-statement switch, app feature discovery." },
+          { "asset_tag": "subj_digital_native", "customer_intelligence_engine_trigger": "app_logins_30d > 20 AND segment = digital_native", "visual_direction": "Effortlessly tech-fluent. Phone and earbuds. Fast-paced urban.", "behavioural_context": "Super-app features, QR payments, instant transfers." }
+        ]
+      },
+      {
+        "category": "Mass Market / Near-Banked",
+        "assets": [
+          { "asset_tag": "subj_first_account", "customer_intelligence_engine_trigger": "account_age < 30d OR is_first_account = true", "visual_direction": "Young adult, eager. Holding a debit card for the first time.", "behavioural_context": "Basic savings, debit card activation, first loan." },
+          { "asset_tag": "subj_migrant_worker", "customer_intelligence_engine_trigger": "remittance_send_12m > 3 transactions", "visual_direction": "Hardworking, proud, practical. Phone-first. Family implied.", "behavioural_context": "Remittance, low-fee transfer, basic savings." },
+          { "asset_tag": "subj_provincial_customer", "customer_intelligence_engine_trigger": "branch_region = rural OR tier3_city = true", "visual_direction": "Community setting. Grounded. Authentic rural or small-town feel.", "behavioural_context": "Agricultural loan, provincial offer, basic insurance." }
+        ]
+      },
+      {
+        "category": "Special Segments",
+        "assets": [
+          { "asset_tag": "subj_expat_professional", "customer_intelligence_engine_trigger": "nationality != local OR visa_type = work_permit", "visual_direction": "International professional. Cosmopolitan. City skyline setting.", "behavioural_context": "Forex, international transfer, expat banking package." },
+          { "asset_tag": "subj_hnwi", "customer_intelligence_engine_trigger": "wealth_segment = high_net_worth", "visual_direction": "Ultra-polished. Private banking energy. Understated luxury. Minimal frame.", "behavioural_context": "Private banking, wealth advisory, investment products." },
+          { "asset_tag": "subj_military_govt", "customer_intelligence_engine_trigger": "employer_type IN [government, military]", "visual_direction": "Formal or uniform attire implied. Respectful, structured.", "behavioural_context": "Government salary account, civil service loan, pension." }
+        ]
+      }
+    ]
+  },
+  "bucket_3_product": {
+    "name": "Product (Foreground Prop / Next Best Action)",
+    "description": "The Product bucket is the foreground offer layer - the closest visual element to the viewer and the most direct expression of the Next Best Action from the recommendation engine. All assets are transparent-background PNGs with built-in drop shadow, compositing cleanly over any Theme + Context combination.",
+    "categories": [
+      { "category": "Credit Cards", "asset_tag_names": ["prod_card_standard", "prod_card_premium", "prod_card_elite"], "nba_trigger": "nba = credit_card (tier varies)", "visual_direction": "Floating 3D card at 15deg tilt. High-gloss reflection. Approved card artwork only." },
+      { "category": "Personal Loan", "asset_tag_names": ["prod_cash_personal_loan"], "nba_trigger": "nba = personal_loan", "visual_direction": "Clean VND note stack or abstract cash icon. Modern, not desperate." },
+      { "category": "Auto Loan", "asset_tag_names": ["prod_car_keys"], "nba_trigger": "nba = auto_loan", "visual_direction": "Sleek car keys + blurred car silhouette. Silver or black keys on clean surface." },
+      { "category": "Home Loan", "asset_tag_names": ["prod_house_keys", "prod_home_model"], "nba_trigger": "nba = home_loan", "visual_direction": "Front-door key + minimalist house icon. Warm premium residential feel." },
+      { "category": "Education Loan", "asset_tag_names": ["prod_books_grad"], "nba_trigger": "nba = edu_loan", "visual_direction": "Books + graduation cap. Optimistic, clean, forward-looking." },
+      { "category": "Savings / Term Deposit", "asset_tag_names": ["prod_piggy_vault", "prod_growing_plant"], "nba_trigger": "nba = savings OR term_deposit", "visual_direction": "Gold vault or green growing plant. Accumulation metaphor." },
+      { "category": "Investments", "asset_tag_names": ["prod_gold_coins", "prod_chart_up"], "nba_trigger": "nba = investment_product OR wealth = high", "visual_direction": "Rising chart + gold coins. Premium dark background suits well." },
+      { "category": "Digital / App Features", "asset_tag_names": ["prod_app_screen", "prod_shield_digital", "prod_qr_pay"], "nba_trigger": "nba = digital_feature OR segment = new_to_digital", "visual_direction": "Phone screen with app UI. QR icon. Shield for security. Clean tech." },
+      { "category": "Business Banking", "asset_tag_names": ["prod_biz_account", "prod_pos_terminal", "prod_invoice"], "nba_trigger": "nba = biz_product OR account_type = business", "visual_direction": "POS terminal, business card stack, invoice graphic. Professional." },
+      { "category": "Insurance / Protection", "asset_tag_names": ["prod_umbrella_protect", "prod_family_shield"], "nba_trigger": "nba = insurance", "visual_direction": "Minimalist umbrella over family silhouette. Soft protective tones." },
+      { "category": "Remittance / Transfer", "asset_tag_names": ["prod_globe_transfer", "prod_arrows_exchange"], "nba_trigger": "nba = remittance OR international_transfer", "visual_direction": "Globe with transfer arrow. Clean, fast, trustworthy." },
+      { "category": "Rewards / Cashback", "asset_tag_names": ["prod_gift_reward", "prod_cashback_badge"], "nba_trigger": "nba = rewards OR active_promo = cashback", "visual_direction": "Floating gift box or bold cashback badge. Gold and green." }
+    ]
+  }
+}
