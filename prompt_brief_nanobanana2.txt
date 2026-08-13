@@ -92,3 +92,31 @@ Style thiết kế hiện đại, hình ảnh sáng sủa, tươi sáng, không 
 
 
 Sửa lại cho tôi hình ảnh sau, bỏ phần nội dung bị double appear như "Hoàn 5%" đang bị dư. Remove double, only appear once for a content. Remove icon for removed content. Bạn phải kiểm tra cẩn thận truớc khi xuất lại hình
+
+
+{ 
+  "rule_id": "R_SLOT2_001", 
+  "priority": 1, 
+  "format_type": "in_app_banner", 
+  "slot_id": "POST_TRANSFER", 
+  "description": "Post-transfer — high-value transfer — savings cross-sell", 
+  "condition": { 
+    "AND": [ 
+      { "slot_id": "POST_TRANSFER" }, 
+      { "session.transfer_amount": { "GTE": 5000000 } }, 
+      { "age": { "BETWEEN": [25, 45] } }, 
+      { "nba": "savings" } 
+    ] 
+  }, 
+  "buckets": { 
+    "theme":   "theme_brand_primary", 
+    "context": "subj_youngpro_m", 
+    "product": "prod_growing_plant" 
+  }, 
+  "copy": { 
+    "headline": "You transfer often — make it grow too.", 
+    "subcopy":  "Auto-save and earn {{offerRate}}% p.a. on every transfer.", 
+    "cta_label": "Set Up Auto-Save", 
+    "cta_deep_link": "/savings/autosave/setup" 
+  } 
+}
