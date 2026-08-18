@@ -1,0 +1,23 @@
+{
+  "creative_id": "MKT_DEMO_HALLOWEEN",
+  "format_type": "website_banner",
+  "design_brief": "Thiết kế banner sử dụng cho Lễ Halloween 31/10, cho đối tượng khách hàng là các bạn trẻ năng động, tuổi 18 tới 25, thiết kế nhấn vào sự hào hứng không khí lễ hội Halloween, với sự tiện lợi của thẻ Lifestyle cùng nhiều ưu đãi hấp dẫn của thẻ. Thiết kế nên có các biểu tượng tiêu biểu của dịp halloween. ",
+  "buckets": {
+    "theme": "Bucket_1/theme_promotion.jpg",
+    "context": "Bucket_2/subj_young couple.jpg",
+    "product": "Bucket_3/prod_card_lifestyle.png"
+  },
+  "reference": "",
+  "text": {
+    "headline": "Thỏa sức tận hưởng Giáng sinh",
+    "message": "theo lifestyle riêng của bạn. Vui chơi tẹt ga, hoàn tới 15%",
+    "cta_label": "Mở thẻ Ngay",
+    "cta_deep_link": "creditcard/lifestyle/register"
+  },
+  "guidelines": "guideline/guide_line.png",
+  "num_version": 3,
+  "output": {
+    "size": "512,512",
+    "clone": []
+  }
+}

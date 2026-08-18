@@ -1,0 +1,23 @@
+{
+  "creative_id": "MKT_DEMO_TET",
+  "format_type": "website_banner",
+  "design_brief": "Thiết kế banner sử dụng cho dịp Tết Nguyên đán Việt Nam, cho đối tượng khách hàng là các bạn trẻ năng động, tuổi 18 tới 25, thiết kế nhấn vào không khí sum vầy Tết truyền thống của người Việt, đi kèm sự tiện lợi của thẻ Lifestyle với nhiều ưu đãi hấp dẫn của thẻ. Thiết kế nên có các biểu tượng tiêu biểu của Tết truyền thống việt nam. ",
+  "buckets": {
+    "theme": "Bucket_1/theme_promotion.jpg",
+    "context": "Bucket_2/subj_young couple.jpg",
+    "product": "Bucket_3/prod_card_lifestyle.png"
+  },
+  "reference": "",
+  "text": {
+    "headline": "Tết, Tết, Tết đến rồi...",
+    "message": "Thỏa sức mua sắm với thẻ Lifestyle. Hoàn vui chơi giải trí đến 15%",
+    "cta_label": "Mở thẻ Ngay",
+    "cta_deep_link": "creditcard/lifestyle/register"
+  },
+  "guidelines": "guideline/guide_line.png",
+  "num_version": 3,
+  "output": {
+    "size": "512,512",
+    "clone": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "creative_id": "MKT_DEMO_QK29",
+  "format_type": "website_banner",
+  "design_brief": "Thiết kế banner sử dụng cho dịp quốc khánh việt nam, cho đối tượng khách hàng từ 35 tới 45 tuổi, thể hiện sự sang trọng quý phái với sản phẩm thẻ với nhiều ưu đãi hấp dẫn. ",
+  "buckets": {
+    "theme": "Bucket_1/theme_travel_mode.jpg",
+    "context": "Bucket_2/subj_middle_income_f.jpg",
+    "product": "Bucket_3/prod_card_MCW.png"
+  },
+  "reference": "",
+  "text": {
+    "headline": "Chạm thẻ mở đặc quyền",
+    "message": "Chờ bay theo cách riêng.",
+    "cta_label": "Mở thẻ Ngay",
+    "cta_deep_link": "creditcard/lifestyle/register"
+  },
+  "guidelines": "guideline/guide_line.png",
+  "num_version": 2,
+  "output": {
+    "size": "900,900",
+    "clone": []
+  }
+}

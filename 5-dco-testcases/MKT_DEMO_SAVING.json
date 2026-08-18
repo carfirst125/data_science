@@ -1,0 +1,23 @@
+{
+  "creative_id": "MKT_DEMO_SAVING",
+  "format_type": "in_app_banner",
+  "design_brief": "Thiết kế banner sử dụng cho cho sản phẩm Gởi tiết kiệm, cho đối tượng khách hàng là người đi làm có thu nhập, phong cách hiện đại, tuổi 27 tới 35, thiết kế nhấn vào sự lịch lãm, trưởng thành và sản phẩm tiết kiệm linh hoạt lãi suất tốt.",
+  "buckets": {
+    "theme": "Bucket_1/theme_tet.jpg",
+    "context": "Bucket_2/subj_middle_income_f.jpg",
+    "product": ["Bucket_3/prod_savings_onl.png","Bucket_3/prod_chart_up.png"]
+  },
+  "reference": "",
+  "text": {
+    "headline": "FLEXI SAVING Sinh lời linh hoạt",
+    "message": "Gởi càng dài, lãi càng cao. Lên đến 8.7%/năm.",
+    "cta_label": "Gởi tiết kiệm ngay",
+    "cta_deep_link": "savings/flexi-savings/register"
+  },
+  "guidelines": "guideline/guide_line.png",
+  "num_version": 3,
+  "output": {
+    "size": "512,512",
+    "clone": []
+  }
+}

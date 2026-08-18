@@ -1,0 +1,23 @@
+{
+  "creative_id": "MKT_DEMO_NOEL",
+  "format_type": "in_app_banner",
+  "design_brief": "Thiết kế banner sử dụng cho dịp Giáng sinh Noel 2026, cho đối tượng khách hàng là giới trẻ năng động, phong cách, hiện đại, tuổi 20 tới 25, thiết kế nhấn vào sự năng động, thể hiện sự tiện lợi, nhanh chóng với nhiều ưu đãi từ thẻ. ",
+  "buckets": {
+    "theme": "Bucket_1/theme_food.jpg",
+    "context": "Bucket_2/subj_student_f.jpg",
+    "product": "Bucket_3/prod_card_lifestyle.png"
+  },
+  "reference": "",
+  "text": {
+    "headline": "Thỏa sức tận hưởng Giáng sinh",
+    "message": "Cùng lifestyle riêng của bạn. Vui chơi tẹt ga, hoàn tới 15%",
+    "cta_label": "Mở thẻ Ngay",
+    "cta_deep_link": "creditcard/lifestyle/register"
+  },
+  "guidelines": "guideline/guide_line.png",
+  "num_version": 2,
+  "output": {
+    "size": "512,512",
+    "clone": []
+  }
+}
