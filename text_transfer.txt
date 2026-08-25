@@ -22,3 +22,16 @@
     "clone": []
   }
 }
+
+
+Bjan hãy vào thư mục ./version_2, trong version_2 bạn sửa lại code cho tôi với trong đó thêm một bước sử dụng gpt5mini để kiểm tra output image của image model trả về có bị cắt ngang sản phẩm trên ở output size hay không? 
+Nếu kiểm tra không có lỗi bị cắt ngang hình sản phẩm, thì tạo ảnh thành công, lưu ảnh vào output và kết thúc chương trình.
+Nếu sản phẩm bị cắt ngang, bạn có thể kết luận là thiết kế đã unacceptable, tức chưa đạt và cần thiết kế lại. Ở bước tiếp theo bạn cho hình ảnh image model đã sinh ra fail ở trên, đưa vào prompt với hướng dẫn với nội dung: 
+"Bạn hãy sửa lại hình tôi đính kèm sau theo những yêu cầu sau:
+1- Trên hình hiện tại phần hình ảnh sản phẩm trong thiết kế đã bị cắt ngang. Tôi muốn bạn chỉnh sửa lại thiết kế với hình sản phẩm nằm lọt trong khung hình và thỏa guideline của thiết.
+2- Trên hình hiện tại, nếu 2 bên mép còn có số đo hay màu không đồng nhất, tách lớp với background của ảnh, bạn hãy thực hiện đồng nhất hình ảnh 2 bên mép chung với background của ảnh.
+3- Kiểm tra khoảng cách từ mép tới nội dung chính của thiết kế thỏa guideline thiết kế.
+
+Guideline thiết kế:
+{{guideline thiết kế theo format_type bạn dán vào đây}}"
+Bạn nhớ đính kèm file hình cần sửa do image model tạo ra lần trước.
